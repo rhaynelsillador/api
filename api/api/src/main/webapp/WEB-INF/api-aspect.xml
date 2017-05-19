@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+	<!-- Aspect -->
+	<bean id="loggingAspect" class="com.api.model.form.AccountForm" />
+
+	<!-- <aop:config>
+
+		<aop:aspect id="aspectSession" ref="loggingAspect">
+
+			@Before
+			<aop:pointcut id="pointCutSessionBefore" expression="execution(* com.front.api.controller..*.*(..)) &amp;&amp; !@annotation(com.api.interceptors.annotation.ByPassSessionValidation)" />
+
+			<aop:before method="sessionBefore" pointcut-ref="pointCutSessionBefore" />
+
+		</aop:aspect>
+		
+		<aop:aspect id="aspectSession" ref="roleAuthorizationAspect">
+
+			@Before
+			<aop:pointcut id="pointCutRoleBefore" expression="@annotation(com.api.interceptors.annotation.RoleAuthorization)" />
+
+			<aop:before method="roleBefore" pointcut-ref="pointCutRoleBefore" />
+
+		</aop:aspect>
+
+		<aop:aspect id="aspectLoggging" ref="logAspect">
+
+			@Before
+			<aop:pointcut id="pointCutLoggingBefore" expression="execution(* com.gotech.controller..*.*(..)) &amp;&amp; !@annotation(com.gotech.annotation.ByPassLogging)" />
+
+			<aop:before method="logBefore" pointcut-ref="pointCutLoggingBefore" />
+
+		</aop:aspect> 
+	</aop:config>--> 
+	
+</beans>

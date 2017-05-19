@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="agentBetRolesAndMessageDao" class="com.gotech.group.dao.impl.AgentBetRolesAndMessageDaoImpl" />
+	
+	<bean id="agentOperationsCommissionDao" class="com.gotech.group.dao.impl.AgentOperationsCommissionDaoImpl" />
+	
+	<bean id="alarmDao" class="com.gotech.group.dao.impl.AlarmDaoImpl" />
+	
+	<bean id="applicationsSettingsDao" class="com.gotech.group.dao.impl.ApplicationsSettingsDaoImpl" />
+	
+	<bean id="bankingRequestDao" class="com.gotech.group.dao.impl.BankingRequestDaoImpl" />
+	
+	<bean id="banksDao" class="com.gotech.group.dao.impl.BanksDaoImpl" />
+	
+	<bean id="currencyDao" class="com.gotech.group.dao.impl.CurrencyDaoImpl" />
+	
+	<bean id="groupDao" class="com.gotech.group.dao.impl.GroupDaoImpl" />
+
+	<bean id="languageDao" class="com.gotech.group.dao.impl.LanguageDaoImpl" />	
+
+	<bean id="logDao" class="com.gotech.group.dao.impl.LogDaoImpl" />
+
+	<bean id="loginLogHistoryDao" class="com.gotech.group.dao.impl.LoginLogHistoryDaoImpl" />
+	
+	<bean id="newsDao" class="com.gotech.group.dao.impl.NewsDaoImpl" />
+	
+	<bean id="credentialsDao" class="com.gotech.group.dao.impl.CredentialsDaoImpl" />
+	
+	<bean id="operationsDao" class="com.gotech.group.dao.impl.OperationsDaoImpl" />
+
+	<bean id="playerOperationEndRequestDao" class="com.gotech.group.dao.impl.PlayerOperationEndRequestDaoImpl" />
+	
+	<bean id="proxyAvailabilityDao" class="com.gotech.group.dao.impl.ProxyAvailabilityDaoImpl" />
+	
+	<bean id="proxyDao" class="com.gotech.group.dao.impl.ProxyDaoImpl" />
+
+	<bean id="roleGroupDao" class="com.gotech.group.dao.impl.RoleGroupDaoImpl" />
+
+	<bean id="rolesDao" class="com.gotech.group.dao.impl.RolesDaoImpl" />
+	
+	<bean id="transactionHistoryDao" class="com.gotech.group.dao.impl.TransactionHistoryDaoImpl" />
+	
+	<bean id="userRolesDao" class="com.gotech.group.dao.impl.UserRolesDaoImpl" />
+	
+	<bean id="usersBanksDao" class="com.gotech.group.dao.impl.UsersBanksDaoImpl" />
+	
+	<bean id="usersDao" class="com.gotech.group.dao.impl.UsersDaoImpl" />
+	
+	<bean id="usersWalletDao" class="com.gotech.group.dao.impl.UsersWalletDaoImpl" />
+	
+	
+
+</beans>
